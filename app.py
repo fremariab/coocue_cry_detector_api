@@ -30,7 +30,7 @@ def extract_mel_spectrogram(file_path):
     return mel_db[:, :SPEC_SHAPE[1]]
 
 # --- Load your trained model (replace path as needed) ---
-MODEL_PATH = '/home/yourusername/cry-detector-api/cry_detector.h5'
+MODEL_PATH = 'cry_detector.h5'
 model = tf.keras.models.load_model(MODEL_PATH)
 
 app = Flask(__name__)
